@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Email Spam Detection</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="{{url_for('static',filename='icon/favicon.ico')}}"/>
+  <link href="{{url_for('static',filename='icon/favicon.ico')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='assets/css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.3.0
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/"><b>EMAIL SPAM DETECTION</b></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="getstarted" class="active">Home</a></li>
+          <li><a href="/about" class="getstarted" class="active">About</a></li>
+          <li><a href="/register" class="getstarted" class="active">Register</a></li>
+          <li><a href="/login" class="getstarted" class="active">Login</a></li>
+          <li><a href="/contact" class="getstarted" class="active">Contact</a></li>
+
+          
+           
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide1.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"> LIFE WOULD BE EASIER IF,<BR>YOU COULD MARK PEOPLE<BR>AS SPAM<span></span></h2>
+              <p class="animate__animated animate__fadeInUp">JIMMY BUFFETT</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide2.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Adversing Spam</h2>
+              <p class="animate__animated animate__fadeInUp">Ad spam is generally something you wish you hadn't encountered while online. <br>This can include junk mail containing unsolicited products or services, pop-up advertisements whizzing across the screen,<br> or even unfamiliar text messages sent to your smartphone.Flag these messages as spam and remove them from your inbox.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide3.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"> Adult content spam</h2>
+              <p class="animate__animated animate__fadeInUp">This category of spam includes offers for products designed to increase or enhance sexual potency, links to porn sites or advertisements for pornography etc.Over the last few years the prevalence of this spam category has receded, to be replaced by other mailings. Three years ago, offers of access to pornographic sites led the field, however, today this type of spam is negligible. The quantity of this type of mailing in Western languages is reducing while the situation with Russian-language spam is the opposite – its volumes are growing. Russian-language adult content spam nearly always contains offers from dating agencies and advertisements for pornographic websites.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide4.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Health and Medicine Relatd Spam</h2>
+              <p class="animate__animated animate__fadeInUp">This category includes advertisements for weight loss, skin care, posture improvement, cures for baldness, dietary supplements and non-traditional medication etc. which can all be bought on-line.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide6.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Computers and the Internet Related Spam </h2>
+              <p class="animate__animated animate__fadeInUp">This category includes offers for low-priced hardware and software as well as services for website owners such as hosting, domain registration, website optimization and so forth.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/Capture.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Personal finance Related Spam</h2>
+              <p class="animate__animated animate__fadeInUp">Spam which falls into this category offers insurance, debt reduction services, loans with low interest rates etc.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('{{url_for('static',filename='assets/img/slide/slide5.jpg')}}')">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Education Related Spam</h2>
+              <p class="animate__animated animate__fadeInUp">This category includes offers for seminars, training and online degrees.</p>
+              
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+{% block body %}
+{% endblock %}
+
+  <main id="main">
+
+    
+
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>BE PATIENT AND TOUGH,<BR>SOMEONE IS PLAYING WITH YOUR MIND...</h3>
+              <p>
+                PUNE <br>
+                MAHARASHTRA INDIA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> techteam@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>EMAIL SPAM DETECTION</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Spam Detection Team</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
+        Designed by <a href="http://127.0.0.1:5000/">Spam Detection Team </a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>

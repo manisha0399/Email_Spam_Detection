@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			<h2>
+		Spam Detector For Email	</h2>
+		</div>
+		
+		
+	</div>
+	</header>
+	
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">According to the data , received mail is Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">According to the data, received mail is Not a Spam (It is a Ham)</h2>
+	{% endif %}
+
+	</div>
+<a href="/logout">
+		<input type="submit" value="logout" align="right">
+	</a>
+</body>
+</html>

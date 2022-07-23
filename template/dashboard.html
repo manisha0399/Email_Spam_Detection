@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Detection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{{url_for('static',filename ='css1/style.css')}}">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">EMAIL SPAM DETECTION</h2>
+				</div>
+			</div>
+			
+									<form action="{{ url_for('predict')}}" method="POST">
+
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group form-button">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Submit"/>
+                            </div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="{{url_for('static',filename = 'js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'js/popper.js')}}"></script>
+  <script src="{{url_for('static',filename = 'js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'js/jquery.validate.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'js/main.js')}}"></script>
+
+	</body>
+</html>
+
